@@ -1,4 +1,4 @@
-/***************************************************************************//**
+/*****************************************************************************
  @file	   
  @brief	   
  @author   AV
@@ -137,22 +137,6 @@ void can_message_builder(struct can_message* message, bool error_bit, bool dir_b
 /**
  * @brief 
  * 
- * @param message 
- * @return can_tx_sent_status_e 
- */
-can_tx_sent_status_e can_message_send(struct can_message message);
-
-/**
- * @brief 
- * 
- * @param message 
- * @return can_tx_sent_status_e 
- */
-can_tx_sent_status_e can_force_send(struct can_message message);
-
-/**
- * @brief 
- * 
  * @param rx_msg 
  * @return true 
  * @return false 
@@ -183,15 +167,6 @@ uint16_t get_message_can_id(can_message_w_payload msg);
  * @return can_data_id_e 
  */
 can_data_id_e get_can_message_data_id(uint8_t* data_to_check);
-
-/**
- * @brief Get the can message data byte object
- * 
- * @param message 
- * @param byte_num 
- * @return uint8_t 
- */
-uint8_t get_can_message_data_byte(struct can_message message, uint8_t byte_num);
 
 /*******************************************************************************
  ******************************************************************************/
